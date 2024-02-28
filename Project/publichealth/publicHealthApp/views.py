@@ -26,3 +26,8 @@ def index3(request):
     return HttpResponse("<h1>Hello, this is /home/main page</h1>"
                         "<a href='/home' >Click to go back to /home </a> <br>"
                         "<a href='/' >Click to go back to start page</a>")
+
+def login(request):
+    template = loader.get_template('publicHealthApp/login.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
