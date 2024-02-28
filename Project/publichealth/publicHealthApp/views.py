@@ -10,6 +10,8 @@ def index(request):
     return HttpResponse("<h1>Hello, world. You are at the start page.</h1>"
                         "<a href='/home/main' >Click to go to /home/main</a> <br>"
                         "<a href='/home' >Click to go to /home page</a> <br>"
+                        "<a href='/login' >Click to go to /login</a> <br>"
+                        "<a href='/register' >Click to go to /register</a> <br>"
                         "<a href='/' >Click to go back to start page</a>")
 
 def index2(request):
@@ -29,5 +31,10 @@ def index3(request):
 
 def login(request):
     template = loader.get_template('publicHealthApp/login.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def register(request):
+    template = loader.get_template('publicHealthApp/register.html')
     context = {}
     return HttpResponse(template.render(context, request))
