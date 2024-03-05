@@ -6,24 +6,30 @@
     <title>Login</title>
     <style>
         body {
- background-image: url("https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg");
-}
+            background-image: url("https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg");
+            background-size: 2000px 1000px;
+            background-repeat: no-repeat;
+        }
+        * {
+        text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>This is the login page</h1>
-    <p>Please enter your username and password</p>
+    <h1 style="font-size:60px">This is the login page</h1>
+    <hr>
+    <p style="font-size:30px">Please enter your username and password:</p>
     <div class="loginDiv">
-        <input class="inputField" placeholder="Username" />
+        <input class="inputField" style="font-size:30px" placeholder="Username" />
         <br>
         <br>
-        <input class="inputField" type="password" placeholder="Password" />
+        <input class="inputField" style="font-size:30px" type="password" placeholder="Password" />
         <br>
         <br>
-        <button>Login</button>
+        <button style="font-size:30px">Login</button>
         <br>
-        <br>
-        <a href="/register">Already have an account</a>
+        <p style="font-size:30px">Don't have an account?&#128071; Create one<b> below.</b></p>
+        <a href="/register"><b style="font-size:30px">Click here to create an account</b></a>
     </div>
 </body>
 </html>

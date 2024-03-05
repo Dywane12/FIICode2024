@@ -2,11 +2,35 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg");
+            background-size: 2000px 1000px;
+            background-repeat: no-repeat;
+        }
+        * {
+            font-size: larger;
+        }
+        h1 {
+            color: wheat;
+            font-size: xxx-large;
+        }
+        p {
+            text-align: right;
+            color: darkgreen;
+            font-size: xxx-large;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, this is /home page</h1>
-        <a href='/home/main' >Click to go to /home/main </a> <br>
-        <a href='/' >Click to go back to start page</a>
+    <div style="background-color:darkslategray;width: 1905px;height:130px;margin: -10px 10px 20px -10px;">
+        <h1 style="height: 0px;text-align:center;">Forum</h1>
+        <h1 style="height: 0px;text-align: right">Profile</h1>
+        <img src="medical_food.jpg" alt="Med_Icon" style="color: wheat;">
+    </div>
+    <a href='/home/main' >Click to go to main page</a> <br>
+    <a href='/' >Click to go back to start page</a>
     <h3>All users</h3>
     {% if all_users %}
         <ul>
