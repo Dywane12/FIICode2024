@@ -38,3 +38,8 @@ def register(request):
     template = loader.get_template('publicHealthApp/register.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+def profile(request):
+    template = loader.get_template('publicHealthApp/profile.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
