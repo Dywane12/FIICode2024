@@ -15,22 +15,40 @@
             color: wheat;
             font-size: xxx-large;
         }
-        p {
-            text-align: right;
-            color: darkgreen;
-            font-size: xxx-large;
-            height: 100px;
+        .navbar{
+            background: rosybrown; font-family: Calibri; padding-right: 15px;padding-left: 15px;
+        }
+        .navdiv{
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        li{
+            list-style: none; display: inline-block;
+        }
+        li a{
+            color: aqua; font-size: 50px; font-weight: bold; margin-right: 300px;
+        }
+        button{
+            background-color: black; margin-left: 15px; border-radius: 10px; padding: 10px; width: 130px;
+        }
+        button a{
+            color: white; font-weight: bold; font-size: 25px;
         }
     </style>
 </head>
 <body>
-    <div style="background-color:darkslategray;width: 100%;min-height:130px;margin: -10px 10px 20px -10px;">
-        <h1 style="height: 0px;text-align:center;">Forum</h1>
-        <h1 style="height: 0px;text-align: right">Profile</h1>
-        <img src="medical_food.jpg" alt="Med_Icon" style="color: wheat;">
-    </div>
-    <a href='/home/main' >Click to go to main page</a> <br>
-    <a href='/' >Click to go back to start page</a>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><img src="https://w7.pngwing.com/pngs/2/979/png-transparent-dietary-supplement-herbal-center-energetic-nutrition-health-food-leaf-text-thumbnail.png" alt="Med_Icon" style="color:wheat;height: 130px;"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/home/main">Forum</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <button><a href="/login">Login</a></button>
+                <button><a href="/register">Register</a></button>
+            </ul>
+        </div>
+    </nav>
+    <br>
     <h3>All users</h3>
     {% if all_users %}
         <ul>
